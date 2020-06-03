@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+body {
+  height: 100vh;
+  width: 1440px;
+  margin-left: 8%;
+}
 
 .App-header {
   background-color: #282c34;
@@ -15,7 +20,7 @@
 
 body {
   height: 100vh;
-  max-width: 1440px;
+  width: 1440px;
   background-color: hsl(207, 26%, 17%);
   display: flex;
   flex-direction: column;
@@ -24,6 +29,10 @@ body {
   color: white;
 }
 
+.display-main-page {
+  width: 1400px;
+  margin-top: 30px;
+}
 .countries-page {
   width: 100%;
   display: flex;
@@ -58,4 +67,15 @@ ul {
 li {
   list-style: none;
 }
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.search {
+  height: 30px;
+  margin: 20px 0 30px 30px;
+  color: black;
+  }
 

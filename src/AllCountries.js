@@ -1,17 +1,14 @@
-import React from 'react'
-import CountryInfo from './CountryInfo'
-import countryData from './CountriesData.json'
+import React from "react";
+import CountryInfo from "./CountryInfo";
 
-const AllCountries = () => {
-    return (
-        <div className='countries-page'>
-        {countryData.map((country)=> {
-            return (
-                <CountryInfo info={country}/>
-            )
-        })}
+const AllCountries = (props) => {
+  return (
+    <div className="countries-page">
+      {props.countryData.map((country, index) => {
+        return <CountryInfo key={index} info={country} />;
+      })}
     </div>
-)
-}
+  );
+};
 
-export default AllCountries
+export default AllCountries;
